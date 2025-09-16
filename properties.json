@@ -1,0 +1,28 @@
+{
+    "serenity": {
+        "permissions": "./permissions.json",
+        "resources": "./resource_packs",
+        "movementValidation": true,
+        "movementHorizontalThreshold": 0.4,
+        "movementVerticalThreshold": 0.6,
+        "shutdownMessage": "Server is shutting down.",
+        "ticksPerSecond": 20,
+        "debugLogging": false
+    },
+    "network": {
+        "compressionMethod": 0,
+        "compressionThreshold": 256,
+        "frameMonitoring": true,
+        "packetsPerFrame": 64
+    },
+    "raknet": {
+        "address": "0.0.0.0",
+        "port": 19132,
+        "protocol": 827,
+        "version": "1.21.100",
+        "message": "SerenityJS",
+        "maxConnections": 40,
+        "mtuMaxSize": 1492,
+        "mtuMinSize": 400
+    }
+}
