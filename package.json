@@ -1,0 +1,30 @@
+{
+  "name": "qwrtsmc",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "private": true,
+  "workspaces": [
+    "plugins/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@serenityjs/binarystream": "^3.0.10",
+    "@serenityjs/core": "^0.8.12",
+    "@serenityjs/logger": "^0.8.12",
+    "@serenityjs/nbt": "^0.8.12",
+    "@serenityjs/plugins": "^0.8.12",
+    "@serenityjs/protocol": "^0.8.12",
+    "@serenityjs/raknet": "^0.8.12"
+  },
+  "devDependencies": {
+    "@ariesclark/eslint-config": "^3.1.1",
+    "@types/node": "^22.5.2",
+    "eslint": "9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
